@@ -1,15 +1,11 @@
 import {
 	HiOutlineViewGrid,
-	HiOutlineCube,
-	HiOutlineShoppingCart,
-	HiOutlineUsers,
-	HiOutlineDocumentText,
-	HiOutlineAnnotation,
-	HiOutlineQuestionMarkCircle,
-	HiOutlineCog
+	HiOutlineDocumentSearch
 } from 'react-icons/hi'
 
-export const DASHBOARD_SIDEBAR_LINKS = [
+import {MdOutlinePersonPin,MdSettings} from 'react-icons/md'
+
+export const DASHBOARD_SIDEBAR_BOTTOM_LINKS = [
 	{
 		key: 'dashboard',
 		label: 'Dashboard',
@@ -17,48 +13,25 @@ export const DASHBOARD_SIDEBAR_LINKS = [
 		icon: <HiOutlineViewGrid />
 	},
 	{
-		key: 'products',
-		label: 'Products',
-		path: '/product',
-		icon: <HiOutlineCube />
+		key: 'approvals',
+		label: 'Approvals',
+		path: '/approvals',
+		icon: <HiOutlineDocumentSearch />
 	},
-	{
-		key: 'orders',
-		label: 'Orders',
-		path: '/orders',
-		icon: <HiOutlineShoppingCart />
-	},
-	{
-		key: 'customers',
-		label: 'Customers',
-		path: '/customers',
-		icon: <HiOutlineUsers />
-	},
-	{
-		key: 'transactions',
-		label: 'Transactions',
-		path: '/transactions',
-		icon: <HiOutlineDocumentText />
-	},
-	{
-		key: 'messages',
-		label: 'Messages',
-		path: '/messages',
-		icon: <HiOutlineAnnotation />
-	}
+	
 ]
 
-export const DASHBOARD_SIDEBAR_BOTTOM_LINKS = [
+export const DASHBOARD_SIDEBAR_LINKS = [
+	{
+		key: 'my-clients',
+		label: 'My Clients',
+		path: '/my-clients',
+		icon: <MdOutlinePersonPin />
+	},
 	{
 		key: 'settings',
 		label: 'Settings',
 		path: '/settings',
-		icon: <HiOutlineCog />
+		icon: <MdSettings />
 	},
-	{
-		key: 'support',
-		label: 'Help & Support',
-		path: '/support',
-		icon: <HiOutlineQuestionMarkCircle />
-	}
 ]
