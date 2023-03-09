@@ -3,7 +3,6 @@ function Index() {
     const [show, setShow] = useState(false);
     return (
         <>
-            {/* Card is full width. Use in 4 col grid for best view. */}
             {/* Card code block start */}
             <div className="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6">
 				{/* card 1 */}
